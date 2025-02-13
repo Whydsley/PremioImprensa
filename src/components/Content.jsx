@@ -37,7 +37,7 @@ const Content = () => {
           Chegou o <b>1º prêmio</b> de boas práticas de
           <br />
           comunicação da
-          <b>imprensa oficial do espírito santo</b>
+          <b> imprensa oficial do espírito santo</b>
         </p>
       </div>
 
