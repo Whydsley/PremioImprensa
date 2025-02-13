@@ -4,11 +4,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 body {
   font-family: "Montserrat", sans-serif;
-  overflow-x: hidden;
   background-color: black;
 }
 
@@ -359,11 +359,23 @@ body {
 
   .content-container .info {
     position: absolute;
-    top: 21%;
-    left: 3%;
-    width: 300px;
-    height: 300px;
+    top: 20%;
+    left: 17%;
+    width: 400px;
+    height: 400px;
     background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  .content-down {
+    position: relative;
+    color: white;
+    width: 80vw;
+    margin-top: -250px;
+    margin-left: auto;
+    border-bottom: 3px white solid;
+    border-left: 3px white solid;
+    border-bottom-left-radius: 50px;
+    text-align: center;
   }
 
   .content-down {
@@ -402,27 +414,17 @@ body {
 
 /* Tablets pequenos (até 768px) */
 @media (max-width: 768px) {
-  .header-nav ul {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    width: 100%;
-    line-height: 0.1rem;
-  }
-
   .header-nav ul li {
-    font-size: 0.6rem;
-    text-align: left;
+    font-size: 0.7rem;
     margin: 10px;
-    padding: 1px;
   }
 
   .content-container .info {
     position: absolute;
-    top: 21%;
-    left: 3%;
-    width: 300px;
-    height: 300px;
+    top: 20%;
+    left: 17%;
+    width: 500px;
+    height: 500px;
     background-color: rgba(0, 0, 0, 0.7);
   }
 
