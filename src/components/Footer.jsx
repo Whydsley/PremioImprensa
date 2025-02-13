@@ -14,12 +14,15 @@ const Footer = () => {
     const sponsors = document.querySelector(".sponsors");
 
     const handlerScroll = () => {
-      if (window.scrollY > 1900) {
+      const scrollThreshold = window.innerWidth <= 768 ? 1200 : 1900; // Ajuste para telas menores
+      if (window.scrollY > scrollThreshold) {
         sponsors.classList.add("show");
       } else {
         sponsors.classList.remove("show");
       }
     };
+
+    window.addEventListener("scroll", handlerScroll);
 
     window.addEventListener("scroll", handlerScroll);
 

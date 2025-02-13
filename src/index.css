@@ -341,7 +341,7 @@ body {
 }
 
 /* Smartphones padrão (até 480px) */
-@media (max-width: 480px) {
+@media (min-width: 361px) and (max-width: 480px) {
   .header-nav ul {
     flex-direction: column;
   }
@@ -361,10 +361,10 @@ body {
 
   .content-down p {
     text-transform: uppercase;
-    text-align: justify;
     font-size: 30px;
     line-height: 2rem;
     font-weight: 200;
+    margin-right: 70px;
   }
 
   .blank {
@@ -399,10 +399,95 @@ body {
 }
 
 /* Tablets pequenos (até 768px) */
-@media (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 768px) {
+  .header {
+    padding: 0;
+    height: 12vh;
+  }
+
+  .header-nav {
+    display: flex;
+    justify-content: left;
+  }
+
+  .header-nav a {
+    padding: 5px;
+    background-color: white;
+    border-radius: 15px;
+    border: solid 0.1px black;
+  }
+
+  .header-nav ul {
+    width: 600px;
+    margin: 0 10px;
+  }
+
   .header-nav ul li {
-    font-size: 0.7rem;
-    margin: 10px;
+    font-size: 0.6rem;
+    padding: 2px;
+    margin: 0;
+  }
+
+  .content-container {
+    overflow-x: hidden;
+  }
+
+  .content-container .info {
+    position: absolute;
+    top: 25%;
+    left: 8%;
+    width: 400px;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  .content-down {
+    width: 95%;
+  }
+
+  .content-down p {
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    font-weight: 200;
+    width: 60%;
+    margin: 10px 30px 10px 5px;
+  }
+
+  .blank {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-left: -15%;
+    height: 50vh;
+  }
+
+  .blank a {
+    margin: 20px 0;
+  }
+
+  .animated-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50vh;
+  }
+
+  .footer .sponsors {
+    margin-top: 10vh;
+  }
+
+  .footer .sponsors.show {
+    transform: scale(2);
+  }
+
+  .footer .final-banner {
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
   }
 }
 
