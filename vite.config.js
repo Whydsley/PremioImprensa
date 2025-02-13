@@ -25,5 +25,5 @@ export default defineConfig({
     "**/*.aac",
     "**/*.m4a",
   ],
-  base: "/PremioImprensa",
+  base: "/PremioImprensa/",
 });
