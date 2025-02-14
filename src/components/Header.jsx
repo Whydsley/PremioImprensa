@@ -5,24 +5,14 @@ const Header = () => {
   return (
     <>
       <div className="header">
+        <img src={headerLogo} alt="Logo do Cabeçalho" className="logo" />
         <nav className="header-nav">
-          <img src={headerLogo} alt="Logo do Cabeçalho" className="logo" />
-          <ul>
-            <li>
-              <a href="/">Sobre o Premio</a>
-            </li>
-            <li>
-              <a href="/">Consulte o Regulamento</a>
-            </li>
-            <li>
-              <a href="/"> Contato</a>
-            </li>
-            <li>
-              <a className="active" href="/">
-                Inscreva-se
-              </a>
-            </li>
-          </ul>
+          <a href="/">Sobre o Premio</a>
+          <a href="/">Consulte o Regulamento</a>
+          <a href="/"> Contato</a>
+          <a className="active" href="/">
+            Inscreva-se
+          </a>
         </nav>
       </div>
     </>
