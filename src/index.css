@@ -340,6 +340,17 @@ body {
   }
 }
 
+@media (max-width: 1080px) {
+  .content-container .info {
+    position: absolute;
+    top: 10%;
+    left: 12%;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 800px;
+    height: auto;
+  }
+}
+
 /* Smartphones padrão (até 480px) */
 @media (min-width: 361px) and (max-width: 480px) {
   .header-nav ul {
