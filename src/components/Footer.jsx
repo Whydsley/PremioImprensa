@@ -14,7 +14,11 @@ const Footer = () => {
     const sponsors = document.querySelector(".sponsors");
 
     const handlerScroll = () => {
-      const scrollThreshold = window.innerWidth <= 768 ? 1200 : 1900; // Ajuste para telas menores
+      const sponsors = document.querySelector(".sponsors");
+      if (!sponsors) return; // Evita erro caso o elemento não exista
+
+      const scrollThreshold = window.innerWidth <= 768 ? 50 : 100; // Menor valor para mobile
+
       if (window.scrollY > scrollThreshold) {
         sponsors.classList.add("show");
       } else {
@@ -22,14 +26,14 @@ const Footer = () => {
       }
     };
 
+    // Adiciona o evento de scroll
     window.addEventListener("scroll", handlerScroll);
-
-    window.addEventListener("scroll", handlerScroll);
+    handlerScroll(); // Chamada inicial para verificar estado correto
 
     return () => {
       window.removeEventListener("scroll", handlerScroll);
     };
-  });
+  }, []);
 
   return (
     <>

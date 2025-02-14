@@ -7,14 +7,21 @@ const Content = () => {
     const banner = document.querySelector(".banner");
 
     const handlerScroll = () => {
-      if (window.scrollY > 800) {
+      const banner = document.querySelector(".banner");
+      if (!banner) return; // Evita erro caso o elemento não exista
+
+      const scrollThreshold = window.innerWidth <= 768 ? 25 : 50; // Menor valor para mobile
+
+      if (window.scrollY > scrollThreshold) {
         banner.classList.add("active");
       } else {
         banner.classList.remove("active");
       }
     };
 
+    // Adiciona o evento de scroll
     window.addEventListener("scroll", handlerScroll);
+    handlerScroll(); // Chamada inicial para verificar estado correto
 
     return () => {
       window.removeEventListener("scroll", handlerScroll);
